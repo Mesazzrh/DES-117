@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Work 4</title>
+</head>
+<body class="work_detail_page">
+    <header>
+        <div>
+            <h1>PORTFOLIO</h1>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">My Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu_container">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="dropdown_menu">
+            <li><a href="work1.html">Poster for a Pioneering Botanist: Anna Atkins</a></li>
+            <li><a href="work2.html">A Poster for the Autumn Moon Festival</a></li>
+            <li><a href="work3.html">Typography and Structure</a></li>
+            <li><a href="work4.html">UI Design for an Equity-Focused Job App</a></li>
+            <li><a href="work5.html">3D Chair Modeling in Rhino</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu_container ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown_menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown_menu';
+            }
+
+        });
+    </script>
+    
+    <section class="main_content">    
+        <article class="work_content">
+
+            <a href="index.html" class="back_button">
+                <div class="arrow">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <p class="back_text">Back</p>
+            </a>
+
+            <div id="work4content">
+                <h2>UI Design for an Equity-Focused Job App</h2>
+
+                <img src="images/work4.jpg" alt="image of the home page of the app">
+                <p class="p1">This project centers around the design of a conceptual mobile app that addresses the equity challenges faced by young adults from lower socioeconomic backgrounds in accessing job opportunities. Many of these individuals encounter barriers such as limited resources, lack of professional networks, and insufficient guidance. The app aims to bridge these gaps by providing tools and resources to help users find and secure meaningful employment.</p>
+
+                <p class="p2">The UI design focuses on creating a user-friendly platform with an intuitive interface that empowers users to explore job listings, connect with mentors, and build professional skills. Every design decision was informed by the need to make the app accessible, engaging, and supportive of users' unique needs.</p>
+
+                <div>
+                    <h3>Tools & Techniques:</h3>
+
+                    <ul>
+                        <li><strong>Software:</strong> Figma</li>
+                        <li><strong>Design Elements:</strong> Minimalist layout, cool color palette, and accessible typography</li>
+                        <li><strong>Features:</strong> Intuitive navigation, personalized job recommendations, and integrated mentorship tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+</html>

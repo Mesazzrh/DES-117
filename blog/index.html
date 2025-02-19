@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruihong's Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+
+    <section>
+        <div id="sectionh">
+            <h2>Take A Glance At My Posts:</h2>
+            <div class="line"></div>
+        </div>
+
+        <div id="five-posts">
+            <article>
+                <div class="posthnd">
+                    <h2>Internet History</h2>
+                    <time datetime="2024-10-22">October 22, 2024</time>
+                </div>
+                
+                 <div class="img-text-flex">
+                    <img src="images/post1img.jpg" alt="post 1 teaser img" width="200">
+                    <div class="textwbg">
+                        <p>For the question asking opinions on the positive or negative impact that media distribution on the internet has made on people's lives, I think it is kind of hard to tell if there are more positive impacts or negative impacts without accurate data.</p>
+                        <a href="post1.html">Read More</a>
+                    </div>
+                 </div>
+            </article>
+    
+            <article>
+                <div class="posthnd">
+                    <h2>Your Article HTML</h2>
+                    <time datetime="2024-10-28">October 28, 2024</time>
+                </div>
+                
+                <div class="img-text-flex">
+                    <img src="images/post2img.jpg" alt="post 2 teaser img" width="200">
+                    <div class="textwbg">
+                        <p>Why did I choose the elements I used? I chose these elements because of the meaning that they project and the purpose they serve in the text.</p>
+                        <a href="post2.html">Read More</a>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div class="posthnd">
+                    <h2>Narrative Project - Comparative Analysis</h2>
+                    <time datetime="2024-11-04">November 4, 2024</time>
+                </div>
+                
+
+                <div class="img-text-flex">
+                    <img src="images/p3teaserimg.jpg" alt="post 3 teaser img" width="200">
+                    <div class="textwbg">
+                        <p>The first website that I found that was similar to my choice of topic for the Interactive Narrative Project was a design portfolio from John Olson. His page's layout and navigation were pretty effective. </p>
+                        <a href="post3.html">Read More</a>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div class="posthnd">
+                    <h2>Learning Web Design</h2>
+                <time datetime="2024-11-14">November 14, 2024</time>
+                </div>
+                
+
+                <div class="img-text-flex">
+                    <img src="images/p4teaser.png" alt="post 4 teaser img" width="200">
+                    <div class="textwbg">
+                        <p>CSS provides several different techniques of approach which help support making fluid, adaptive and visually impressive designs. However, among several other layout systems, the two of the most effective models that have been invented include Flexbox and Grid.</p>
+                        <a href="post4.html">Read More</a>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div class="posthnd">
+                    <h2>Web Design Research</h2>
+                    <time datetime="2024-11-21">November 21, 2024</time>
+                </div>
+                
+
+                <div class="img-text-flex">
+                    <img src="images/p5teaser.jpg" alt="post 5 teaser img" width="200">
+                    <div class="textwbg">
+                        <p>So I took a look at this site, <a href="https://dbushell.com/2024/11/11/rem-or-px/"><strong><em>REM? PX? Why not both?</em></strong></a> because I do want to know more this area of CSS. This article discusses the author's decision to switch from using only relative units (rem) to a mix of relative (rem) and absolute (px) units in their website's CSS.</p>
+                        <a href="post5.html">Read More</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+  
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+
+   
+
+</body>
+</html>

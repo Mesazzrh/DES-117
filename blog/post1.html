@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+
+    <section class="post_pages_content">
+        <article id="post_one">
+            <div class="post_pages_h2nline">
+                <h2 class="first_h2">Internet History</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="image_container">
+                <img src="images/p1_content_img.jpeg" alt="post 1 img" width="1200" height="394">
+            </div>
+
+            <div class="posthnd">
+                <h2 class="second_h2">Impact of Media to People's Lives</h2>
+                <time datetime="2024-10-22">October 22, 2024</time>
+            </div>
+
+            <div class="contents">
+                <h3>The Dual Impact</h3>
+                <p>For the question asking opinions on the positive or negative impact that media distribution on the internet has made on people's lives, I think it is kind of hard to tell if there are more positive impacts or negative impacts without accurate data. However, it's definitely a mix of both.</p>
+
+                <div id="post_one_p_flex">
+                    <div id="positive_aspects">
+                        <h3>Positive Aspects</h3>
+
+                        <p>Talking about the positive side of media distribution, the internet has made information, entertainment, and educational content widely accessible to people all around the world, often at little or even no cost at all. Which has democratized, or normalized, the access to knowledge and kinds of stuff. Which will help bridge the gaps between the different groups of people.</p>
+
+                        <p>Having media distribution on the internet provides convenience and customization. Such as streaming services, social media, digital publications, etc. that allow us to access content to our needs, with personalized interests, making the process of accessing content more convenient and enjoyable.</p>
+                    </div>
+                    
+
+                    <div id="negative_aspects">
+                        <h3>Negative Aspects</h3>
+
+                        <p>As for the negative side, the distribution of online content makes it easier for misinformation to be spread, especially through social media algorithms that prioritize engagement over accuracy. This can lead to the phenomenon where people only view media content that reinforces their existing beliefs.</p>
+
+                        <p>And with the constant viewing of media, it can contribute to information overload, digital addiction, and even mental issues. And digital addiction, probably is what I got right now because I am indeed addicted to my phone. I will spend one hour or so on my phone when I wake up every day, staying in my bed. And after this period of being on my phone while being in my bed, is when I actually start my day.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </article>
+    </section>
+    
+    <nav class="previous_next">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="post2.html">Next</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+</body>
+</html>

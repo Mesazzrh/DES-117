@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body id="homepage">
+    <header>
+        <div>
+            <h1>PORTFOLIO</h1>
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li id="myworks_title"><a href="index.html">My Works</a></li>
+            </ul>
+        </nav>
+        
+        <div id="down_arrow">
+            <div id="leftline"></div>
+            <div id="rightline"></div>
+        </div>
+
+    </header>
+
+    <div class="menu_container">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="dropdown_menu">
+            <li><a href="work1.html">Poster for a Pioneering Botanist: Anna Atkins</a></li>
+            <li><a href="work2.html">A Poster for the Autumn Moon Festival</a></li>
+            <li><a href="work3.html">Typography and Structure</a></li>
+            <li><a href="work4.html">UI Design for an Equity-Focused Job App</a></li>
+            <li><a href="work5.html">3D Chair Modeling in Rhino</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu_container ul');
+
+        hamburger.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown_menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown_menu';
+            }
+
+        });
+    </script>
+
+    <section class="main_content">
+        <article id="shortintro">
+            <div id="shortintro_line"></div>
+            <p>Hi, I’m <strong id="name_bolded">Ruihong Zhou</strong>, a graphic design student with a passion for Graphic and UI/UX design. As well as a bit interest in Interior Design and 3D Modeling.</p>
+        </article>
+
+        <article id="myworks">
+            <ul id="works">
+                <li id="work_1">
+                    <a href="work1.html">
+                        <div class="opacity_cover"></div>
+                    </a>
+                    
+                    <a href="work1.html">
+                        <img src="images/work1.jpg" alt="image for work 1">
+                    </a>
+                </li>
+
+                <li id="work_2">
+                    <a href="work2.html">
+                        <div class="opacity_cover"></div>
+                    </a>
+                    
+                    <a href="work2.html">
+                        <img src="images/work2.jpg" alt="image for work 2">
+                    </a>
+                </li>
+
+                <li id="work_3">
+                    <a href="work3.html">
+                        <div class="opacity_cover"></div>
+                    </a>
+                    
+                    <a href="work3.html">
+                        <img src="images/work3.jpg" alt="image for work 3">
+                    </a>
+                </li>
+
+                <li id="work_4">
+                    <a href="work4.html">
+                        <div class="opacity_cover"></div>
+                    </a>
+                    
+                    <a href="work4.html">
+                        <img src="images/work4.jpg" alt="image for work 4">
+                    </a>
+                </li>
+
+                <li id="work_5">
+                    <a href="work5.html">
+                        <div class="opacity_cover"></div>
+                    </a>
+                    
+                    <a href="work5.html">
+                        <img src="images/work5.png" alt="image for work 5">
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 2</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+    
+    <!-- <header>
+        <img src="images/blankbanner.png" alt="placeholder" width="1000" height="300">
+        <h1>Your Article HTML</h1>
+    </header> -->
+
+    <section class="post_pages_content">
+        <article id="post_two">
+            <div class="post_pages_h2nline">
+                <h2 class="first_h2">Your Article HTML</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="image_container">
+                <img src="images/p2_content_img.jpg" alt="post 2 img" width="1200" height="394">
+            </div>
+
+            <div class="posthnd">
+                <h2 class="second_h2">My Thoughts on Semantic HTML</h2>
+                <time datetime="2024-10-28">October 28, 2024</time>
+            </div>
+            
+            <div class="contents">
+                <p>Why did I choose the elements I used? I chose these elements because of the meaning that they project and the purpose they serve in the text. For example, for the top element of the page, “header” was adopted, for the navigation section, “nav,” for the main piece of content, “main,” and for the last part “footer” was taken. These elements are very useful because they allow the various contents to be well assigned and it eases the usability of the content throughout the page for my benefit.</p>
+
+                <p>Each of the elements performs a specific task that is related to the web structure under consideration. For example “header” might consist of the title and the introductory information to the page, “nav” will be the links to other sections or pages, and finally “main” will hold the information that I want it to be the main focus.</p>
+
+                <p>I experimented with various CSS properties to achieve a clean, modern, and minimalist look. This included the application of Google Fonts, alteration of margins and padding, and colors for a better readability and legibility. The main goal was to create a simple but good looking design that will be visually appealing to the viewrs.</p>
+
+                <p>One of the hardest parts was creating the image that I wanted in my head without knowing how to do it through CSS effectively. This may involve creating a clean spaced layout for certain items and dealing with an element inside another one, making the design adaptable and able to change based on device and screen conditions, and more.</p>
+            </div>
+            
+        </article>
+    </section>
+    
+    <nav class="previous_next">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="post1.html">Previous</a></li>
+            <li><a href="post3.html">Next</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 3</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+
+    <!-- <header>
+        <img src="images/portfoliomockup.png" alt="portfolio mock up" width="1000"> 
+        <h1>Narrative Project - Comparative Analysis</h1>
+    </header> -->
+
+    <section class="post_pages_content">
+        <article id="post_three">
+            <div class="post_pages_h2nline">
+                <h2 class="first_h2">Narrative Project - Comparative Analysis</h2>
+                <div class="line"></div>
+            </div>
+
+            <!-- <div class="image_container">
+                <img src="images/p2_content_img.jpg" alt="post 2 img" width="1200" height="394">
+            </div> -->
+
+            <div class="posthnd">
+                <h2 class="second_h2">Interactive Narrative Inspirations</h2>
+                <time datetime="2024-11-04">November 4, 2024</time>
+            </div>
+
+            <div class="contents">
+                <p>The first website that I found that was similar to my choice of topic for the Interactive Narrative Project was a design portfolio from John Olson. His page's layout and navigation were pretty effective. Clear navigation at the top left of the page, as well as the arrow pointing bottom being the indication of there are more content below. The way he's showing his work is in the format of having two works per row, without stretching or distorting the image while taking the largest amount of space.</p>
+            
+                <div class="imgnlink">
+                    <img src="images/john-olson.jpg" alt="john olson's portfolio page" width="500">
+                    <a href="https://hellojohnolson.com/">Learn More About John Olson</a>
+                </div>
+
+                <p>The second website I found was a portfolio of a photographer named Nick Guittridge. His page layout was also pretty efftctive. Especially with page layout, being able to show 6 works at a time on my screen, which requires less time to scroll for the viewers. His design of having the whole page in greyscale is pretty interesting, especially with the color turned back to normal when a work is being hovered by the cursor. One suggestion for this page is the navigation part, it's better for me to understand if it's showing which page I am currently on with a level of differentiation.</p>
+                
+                <div class="imgnlink">
+                    <img src="images/nick.jpg" alt="nick's portfolio page" width="500">
+                    <a href="https://nickguttridgearchive.com/architecture">Learn More About Nick Guittridge</a>
+                </div>
+                
+
+                <p>The third website I found was a portfolio of a designer named Amro Arida. His design for the page was very minimalist, very clean and simple. The page was pretty straight forward, navigations, his name, and one of his work. The idea of the hover effect was effective, indicating that it's being selected. However, I would like to see more with this effect since the only change is the color.</p>
+
+                <div class="imgnlink">
+                    <img src="images/amro.jpg" alt="amro's portfolio page" width="500">
+                    <a href="https://amroarida.com/projects">Learn More Amro Arida</a>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <nav class="previous_next">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="post2.html">Previous</a></li>
+            <li><a href="post4.html">Next</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+</body>
+</html>

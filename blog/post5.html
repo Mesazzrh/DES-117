@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 5</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+
+    <!-- <header>
+        <img src="images/blankbanner.png" alt="placeholder" width="1000">
+        <h1>Web Design Research</h1>
+    </header> -->
+
+    <section class="post_pages_content">
+        <article id="post_five">
+            <div class="post_pages_h2nline">
+                <h2 class="first_h2">Web Design Research</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="image_container">
+                <img src="images/p5_content_img.jpg" alt="post 5 img" width="1200" height="394">
+            </div>
+
+            <div class="posthnd">
+                <h2 class="second_h2">Understanding Flexibility and Units</h2>
+                <time datetime="2024-11-21">November 21, 2024</time>
+            </div>
+
+            <div class="contents">
+                <p>So I took a look at this site, <a href="https://dbushell.com/2024/11/11/rem-or-px/"><em>REM? PX? Why not both?</em></a> because I do want to know more this area of CSS. This article discusses the author's decision to switch from using only relative units (rem) to a mix of relative (rem) and absolute (px) units in their website's CSS. The author explores the implications of this change and compares the visual differences between the two approaches through the screenshots he/she created.</p>
+
+                <p>And after viewing this video, <em><a href="https://youtu.be/aHUtMbJw8iA?si=0NJKvEo1hveuHIfF">Why Is CSS So Weird?</a></em>, I noticed that both of them emphasize the importance of responsive design. With the video discussing about CSS's adaptability, while the article is providing practical advices on the uses of relative units like "rem" to make the designs could work on different devices and screen sizes. </p>
+
+                <p>Throughout this course, I’ve gained a solid understanding of HTML and CSS, starting with the basics of structuring an HTML document using semantic tags like <strong>header</strong>, <strong>nav</strong>, and <strong>footer</strong>. Later on, I’ve also learned to enhance the visual presentation of these elements using CSS properties such as color, font, margins, and padding.</p>
+
+                <p>Making a responsive design has also been a key area in this course. By using media queries and scalable units like <strong>%</strong>, <strong>vw</strong>, <strong>vh</strong>, and so on. Using these, I could now make a design that adapts to various screen sizes, making them mobile-friendly.</p>
+
+                <p>Overall, I’ve progressed from creating simple static pages to designing more complex layouts with responsive and visually engaging elements. However, there's a lot more out there for me to discover and learn.</p>
+            </div>
+            
+        </article>
+    </section>
+
+    <nav class="previous_next">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="post4.html">Previous</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+</body>
+</html>

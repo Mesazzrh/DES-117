@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 4</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="imagewoverlay">
+            <img src="images/blogheaderimg.jpg" alt="beach of lake tahoe">
+            <div id="overlay-text"><h1>Ruihong's Blog</h1></div>
+        </div>
+
+        <div id="nav-bar">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="post5"><a href="post5.html">Post 5</a></li>
+                <li class="post4"><a href="post4.html">Post 4</a></li>
+                <li class="post3"><a href="post3.html">Post 3</a></li>
+                <li class="post2"><a href="post2.html">Post 2</a></li>
+                <li class="post1"><a href="post1.html">Post 1</a></li>
+            </ul>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li id="contains_dropdown">
+                    <a href="#" id="dropdown">Posts</a>
+                    <ul class="dropdown-menu">
+                        <li class="post5"><a href="post5.html">Post 5</a></li>
+                        <li class="post4"><a href="post4.html">Post 4</a></li>
+                        <li class="post3"><a href="post3.html">Post 3</a></li>
+                        <li class="post2"><a href="post2.html">Post 2</a></li>
+                        <li class="post1"><a href="post1.html">Post 1</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        const menu = document.querySelector('#contains_dropdown ul');
+
+        dropdown.addEventListener('click', function() {
+            if (menu.classList.contains('dropdown-menu')) {
+                menu.className = 'showing';
+            } else {
+                menu.className = 'dropdown-menu';
+            }
+
+        });
+    </script>
+
+    <!-- <header>
+        <img src="images/blankbanner.png" alt="placeholder" width="1000">
+        <h1>Learning Web Design</h1>
+    </header> -->
+
+    <section class="post_pages_content">
+        <article id="post_four">
+            <div class="post_pages_h2nline">
+                <h2 class="first_h2">Learning Web Design</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="image_container">
+                <img src="images/blog4sc.png" alt="quick demo of using float property" width="1200" height="394">
+            </div>
+            
+            <div class="posthnd">
+                <h2 class="second_h2">CSS Layout Techniques</h2>
+                <time datetime="2024-11-14">November 14, 2024</time>
+            </div>
+
+            <div class="contents">
+                <p>CSS provides several different techniques of approach which help support making fluid, adaptive and visually impressive designs. However, among several other layout systems, the two of the most effective models that have been invented include Flexbox and Grid.</p>
+
+                <p>Flexbox is great for laying things out in one direction, either in a row or column. It’s ideal for aligning items within a container and distributing space between them. Flexbox combines items and distributions with values as directives such as flex-direction: row even, column reverse, and align-items middles. For example, justify-content allows space around the items, and counterpart is align-items which arranges items along the cross axis. Flexbox works especially well for things like navigation bars, form layouts, and smaller, one-directional setups.</p>
+                
+                <p>However, CSS Grid is a two-dimension system that contains lines rows and columns. It is very useful when designing more sophisticated layouts when it becomes necessary to manage each dimension accurately. A grid has rows and columns and a number of parameters such as -template-rows, -template-columns, and -template-areas to specify the layout of the grid and where items will be placed. The fr unit and minmax() function make Grid super flexible, letting it adjust to different screen width. Grid is ideal for whole-page layouts, dashboards, or any setup that benefits from a solid grid structure.</p>
+            
+                <p>The strength of Flexbox and Grid is that they can be used together. For instance, a grid can be used for the main page layout and flexbox can be enlisted for arranging items within the lines of the grid. This is a combination that can support building designs in a most optimized and adaptive way.</p>
+            </div>
+            
+            
+        </article>
+    </section>
+    
+    <nav class="previous_next">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="post3.html">Previous</a></li>
+            <li><a href="post5.html">Next</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>Made by Ruihong</p>
+    </footer>
+</body>
+</html>

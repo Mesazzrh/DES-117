@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+   }
+   
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FBFEF9;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #FBFEF9;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
+}
+
+header h1 {
+    color: #FBFEF9;
+    text-align: center;
+    text-shadow: 
+    -2px 5px 5px #000,
+    0px 0px 5px #000,
+    2px 5px 5px #000;
+    font-family: "Bodoni Moda SC";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+#imagewoverlay {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+
+#imagewoverlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25.5%);
+}
+
+#overlay-text h1 {
+    font-size: 10vw;
+}
+
+#nav-bar {
+    height: 50px;
+    background: #2D3142;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar ul {
+    display: flex;
+    gap: 50px;
+}
+
+#nav-bar #home a {
+    color: #2D3142;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: #BFC0C0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 14px 25px;
+}
+
+#nav-bar .navs a {
+    color: #FBFEF9;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#five-posts {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 600px) {
+    body {
+        width: 1440px;
+    }
+
+    #imagewoverlay {
+        height: 250px;
+    }
+
+    #imagewoverlay img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #overlay-text h1 {
+        font-size: 80px;
+    }
+
+    #overlay-text {
+        top: 43%;
+    }
+
+    #sectionh {
+        width: 1200px;
+        max-width: 90%;
+        margin: 105px auto 55px;
+    }
+
+    #sectionh h2 {
+        color: #4F5D75;
+        font-size: 30px;
+        width: 1200px;
+        max-width: 90%;
+        margin: 0 0 10px;
+    }
+
+    .line {
+        width: 400px;
+        height: 4px;
+        background: #2D3142;
+    }
+
+    .posthnd {
+        display: flex;
+        width: 1200px;
+        max-width: 90%;
+        margin: 0 auto 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .posthnd time {
+        color: #4F5D75;
+        font-style: italic;
+    }
+
+    article h2 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    article {
+        margin-bottom: 100px;
+    }
+
+    .img-text-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5vw;
+        width: 1200px;
+        max-width: 90%;
+        height: 267px;
+        margin: auto;
+    }
+
+    .textwbg {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .textwbg p {
+        height: 171px;
+        overflow: auto;
+        border-radius: 6px;
+        background: #4F5D75;
+        padding: 20px;
+        margin: 0;
+        color: #FBFEF9;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    #nav-bar a:hover {
+        color: #ff5a14;
+    }
+
+    a:hover {
+        color: #ff5a14;
+    }
+
+    .textwbg > a {
+        border-radius: var(--Corner-Small, 8px);
+        background: #EF8354;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #FBFEF9;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 24px;
+    }
+
+    .textwbg > a:hover {
+        color: #FBFEF9;
+        background-color: #ff5a14;
+    }
+
+    .img-text-flex img {
+        flex: 1;
+        border-radius: 6px;
+        box-shadow: 0px 4px 10px 0px #000;
+    }
+
+    footer p {
+        padding: 100px;
+        text-align: center;
+    }
+}
